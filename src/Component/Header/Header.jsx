@@ -69,9 +69,9 @@ const Header = () => {
       </header>
 
       {Open && (
-        <>
-          <div id='close w-full h-full'>
-            <div className=" absolute bg-slate-800 h-full px-5 w-[50%]  mobile-nav  ">
+        <> 
+          <div id='close w-full h-full '>
+            <div className=" absolute bg-slate-800 z-10 h-full px-5 w-[50%]  mobile-nav  ">
               <h1 className="py-2 text-xl font-bold  uppercase">Sports-King</h1>
               <hr />
               <ul className="flex flex-col gap-5 text-green-300 mt-2">

@@ -9,10 +9,11 @@ color: #e6e4e4;
 font-family: 'Teko', sans-serif;
 }
 .bt{
-  background:#45F882;
+  /* border:1px solid #45F882; */
   border-radius: 6px;
   padding: 4px 10px;
   cursor: pointer;
   border: none;
-  color: #333333;
+  color: whitesmoke;
+  border: 1px solid #45F882;
 }
