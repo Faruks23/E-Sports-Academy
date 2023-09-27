@@ -1,14 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 :root{
 background:#333333;
 color: #e6e4e4;
-font-family:Roboto;
+font-family: 'Teko', sans-serif;
 }
 .bt{
-  background:#72d05e;
+  background:#45F882;
   border-radius: 6px;
   padding: 4px 10px;
   cursor: pointer;

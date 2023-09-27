@@ -1,11 +1,12 @@
 import React from 'react';
+import Banner from './Banner/Banner';
 
 const Home = () => {
   return (
-    <div className=''>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, qui? Debitis ut, officia odit, minus ea corporis eaque similique eum repudiandae perferendis aut atque omnis dolorum magnam. Natus, consequatur. Vitae?
-      <button className='bt shadow-md'>Click</button>
-    </div>
+    <>
+      <Banner></Banner>
+    
+    </>
   );
 };
 

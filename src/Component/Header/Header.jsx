@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { FaBars } from "react-icons/fa";
+import React, { useEffect, useState } from 'react';
+import {NavLink } from 'react-router-dom';
+import { FaBars, FaFileVideo, FaHome, FaShoppingCart } from "react-icons/fa";
+import { FaEarthAfrica } from "react-icons/fa6";
 import { AiOutlineClose } from "react-icons/ai";
+import { TbTournament } from "react-icons/tb";
 import NavList from './NavList';
 
 const Header = () => {
@@ -16,14 +18,13 @@ const Header = () => {
 
     setIsOpen(false);
   }
-
-
+  
 
 
 
   return (
     <>
-      <header className="shadow-xl bg-slate-800 p-2">
+      <header className="shadow-xl  fixed  p-4 bg-transparent text-white w-full">
         <nav>
           <div className="flex md:justify-around items-center justify-end">
             {/* nav-list */}
@@ -69,25 +70,33 @@ const Header = () => {
 
       {Open && (
         <>
-          <div className=" absolute bg-slate-800 h-full p-10 w-[50%]  mobile-nav  ">
-            <ul className="flex flex-col gap-5 text-green-300 ">
-              <li>
-                
-                <NavLink to={"/"}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/Shop"}>Shop</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/Tournament"}>Tournament</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/LiveStreaming"}>Live Streaming</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/Community"}>Community</NavLink>
-              </li>
-            </ul>
+          <div id='close w-full h-full'>
+            <div className=" absolute bg-slate-800 h-full px-5 w-[50%]  mobile-nav  ">
+              <h1 className="py-2 text-xl font-bold  uppercase">Sports-King</h1>
+              <hr />
+              <ul className="flex flex-col gap-5 text-green-300 mt-2">
+                <li className="flex gap-2  items-center">
+                  <FaHome></FaHome>
+                  <NavLink to={"/"}>Home</NavLink>
+                </li>
+                <li className="flex gap-2  items-center">
+                  <FaShoppingCart></FaShoppingCart>
+                  <NavLink to={"/Shop"}>Shop</NavLink>
+                </li>
+                <li className="flex gap-2  items-center">
+                  <TbTournament></TbTournament>
+                  <NavLink to={"/Tournament"}>Tournament</NavLink>
+                </li>
+                <li className="flex gap-2  items-center">
+                  <FaFileVideo></FaFileVideo>
+                  <NavLink to={"/LiveStreaming"}>Live Streaming</NavLink>
+                </li>
+                <li className="flex gap-2  items-center">
+                  <FaEarthAfrica></FaEarthAfrica>
+                  <NavLink to={"/Community"}>Community</NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </>
       )}
