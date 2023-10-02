@@ -3,7 +3,7 @@ import React from 'react';
 const Tournament = () => {
   return (
     <div>
-      Tournamnet
+      Tournament
     </div>
   );
 };

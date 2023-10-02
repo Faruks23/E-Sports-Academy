@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 :root{
-background:#333333;
+background:#141B3D;
 color: #e6e4e4;
 font-family: 'Teko', sans-serif;
 }
@@ -15,5 +15,5 @@ font-family: 'Teko', sans-serif;
   cursor: pointer;
   border: none;
   color: whitesmoke;
-  border: 1px solid #45F882;
+  border: 1px solid #000106;
 }

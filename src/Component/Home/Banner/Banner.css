@@ -1,36 +1,48 @@
 
 
 .show_bg_2 {
-    background-image:
-    linear-gradient(to bottom, rgba(9, 9, 10, 0.52), rgba(17, 2, 14, 0.73)),
-    url('https://i.ibb.co/FJW9Hm3/wp8759012-gaming-4k-wallpapers.jpg');
  background-position:center;
  background-size: cover;
     color: white;
     padding: 20px;
     width: 100%;
-    animation: changeBackground 10s infinite;
+    
 }
 .custom-f{
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-@keyframes changeBackground {
-    0% {
-       background-image:
-    linear-gradient(to bottom, rgba(9, 9, 10, 0.52), rgba(17, 2, 14, 0.73)),
-    url('https://i.ibb.co/d7qPNg0/wp8140551-gaming-desktop-green-wallpapers.jpg');
-        /* background-image: url('https://i.ibb.co/d7qPNg0/wp8140551-gaming-desktop-green-wallpapers.jpg'); */
-    }
-    50% {
-       background-image:
-    linear-gradient(to bottom, rgba(9, 9, 10, 0.52),  rgba(17, 2, 14, 0.73)),
-    url('https://i.ibb.co/BVfXb4b/wp9330699-4k-game-wallpapers.jpg');
-        /* background-image: url('https://i.ibb.co/BVfXb4b/wp9330699-4k-game-wallpapers.jpg'); Image to transition to */
-    }
-    100% {
-       background-image:
-    linear-gradient(to bottom, rgba(9, 9, 10, 0.52), rgba(17, 2, 14, 0.73)),
-    url('https://i.ibb.co/FJW9Hm3/wp8759012-gaming-4k-wallpapers.jpg');
-    }
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #1B234D;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-prev , .swiper-button-next{
+    background: #1B234D;
+    padding: 0px 10px !important;
+    color: whitesmoke;
+    transform: translate(0);
+    transition: all 0.5s ease-in-out;
+}
+.swiper-button-prev:hover{
+ transform: translate(0.5);
 }

@@ -5,7 +5,7 @@ import { FaEarthAfrica } from "react-icons/fa6";
 import { AiOutlineClose } from "react-icons/ai";
 import { TbTournament } from "react-icons/tb";
 import NavList from './NavList';
-
+import './Header.css'
 const Header = () => {
 
   const [Open,setIsOpen]=useState(false)
@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="shadow-xl  fixed  p-4 bg-transparent text-white w-full">
+      <header className="shadow-xl  z-40 fixed  p-4 bg-transparent text-white w-full">
         <nav>
           <div className="flex md:justify-around items-center justify-end">
             {/* nav-list */}
@@ -69,12 +69,12 @@ const Header = () => {
       </header>
 
       {Open && (
-        <> 
-          <div id='close w-full h-full '>
-            <div className=" absolute bg-slate-800 z-10 h-full px-5 w-[50%]  mobile-nav  ">
-              <h1 className="py-2 text-xl font-bold  uppercase">Sports-King</h1>
+        <>
+          <div id="close w-full h-full  ">
+            <div className=" fixed bg-[#1B234D] z-10 h-full px-5 w-[50%] mobile-nav ">
+              <h1 className="py-2 text-xl font-bold  uppercase">MY TopUP</h1>
               <hr />
-              <ul className="flex flex-col gap-5 text-green-300 mt-2">
+              <ul className="flex  flex-col gap-5 text-green-300 mt-2">
                 <li className="flex gap-2  items-center">
                   <FaHome></FaHome>
                   <NavLink to={"/"}>Home</NavLink>
